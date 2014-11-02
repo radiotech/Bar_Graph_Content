@@ -18,7 +18,7 @@ void setup(){
 }
 
 void draw(){
-  background(0);
+  background(200,200,255);
   
   rectMode(CORNER);
   
@@ -26,10 +26,10 @@ void draw(){
   
   for(int i = 0; i < bars; i++){
     fill(87,59,12);
-    rect(i*width/bars+1,height-bar[i]*height/max,width/bars-2,height);
+    rect(i*width/bars,height-bar[i]*height/max,width/bars,height);
     
     fill(0,255,0);
-    rect(i*width/bars+1,height-bar[i]*height/max,width/bars-2,bar[i]*height/max/float(50)+15);
+    rect(i*width/bars,height-bar[i]*height/max,width/bars,bar[i]*height/max/float(50)+15);
     
     
   }
